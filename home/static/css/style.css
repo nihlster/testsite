@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #FFF;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#main-nav li:last-child {
+    display: none;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#main-nav a:hover {
+    color: #D2D2D2;
+    transition: 0.4s;
+}
+
+header {
+    text-align: center;
+    padding: 85px;
+}
+
+header h1 {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+header p {
+    margin-top: 15px;
+    line-height: 200%;
+}
+
+header button {
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+}
+ 
+#main-btn {
+    background-color: #337AFF;
+}
+
+#second-btn {
+    background-color: #828489;
+}
+
+#album-grid {
+    display: grid;
+    grid-template-columns: (9, 1fr);
+    grid-template-rows: (6, 5vw);
+    grid-gap: 40px;
+    padding: 80px;
+    background-color: #EBEEF4;
+}
+
+#grid-item-1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+}
+
+#grid-item-2 {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 3;
+}
+
+#grid-item-3 {
+    grid-column: 7 / span 3;
+    grid-row: 1 / span 3;
+}
+
+#grid-item-4 {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 3;
+}
+
+#grid-item-5 {
+    grid-column: 4 / span 3;
+    grid-row: 4 / span 3;
+}
+
+#grid-item-6 {
+    grid-column: 7 / span 3;
+    grid-row: 4 / span 3;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-thumb {
+    background-color: #828489;
+    text-align: center;
+    padding: 80px;
+    color: #FFF;
+}
+
+.flex-item-text {
+    padding: 30px;
+    background-color: #FFF;
+}
+
+.flex-item-text span {
+    float: right;
+    font-size: 12px;
+}
+
+.flex-item-text p {
+    line-height: 30px;
+}
+
+.flex-item-text div {
+    display: flex;
+    width: 32%;
+    margin-top: 15px;
+}
+
+.flex-item-text div a {
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #828489;
+    border: 1px solid #828489;
+}
+
+.flex-item-text div a:hover {
+    color: #FFF;
+    background-color: #828489;
+    transition: 0.4s;
+}
+
+footer {
+    padding: 60px;
+    line-height: 200%;
+}
+
+footer span {
+    float: right;
+}
+
+footer span a {
+    text-decoration: none;
+    color: #337AFF;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
